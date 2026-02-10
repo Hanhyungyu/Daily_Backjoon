@@ -1,17 +1,14 @@
-import java.util.Scanner;
-
+import java.util.*;
 public class Main{
     public static void main(String[]args){
-        Scanner scan=new Scanner(System.in);
-        int A=scan.nextInt();
-        int B=scan.nextInt();
-        int C=scan.nextInt();
-        
+        Scanner sc=new Scanner(System.in);
+        int A=sc.nextInt();
+        int B=sc.nextInt();
+        int C=sc.nextInt();
         System.out.println((A+B)%C);
         System.out.println(((A%C) + (B%C))%C);
         System.out.println((A*B)%C);
-        System.out.println( ((A%C) * (B%C))%C);
-        
+        System.out.println(((A%C) * (B%C))%C);
         
     }
 }
