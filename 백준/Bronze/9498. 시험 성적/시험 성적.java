@@ -1,21 +1,21 @@
-import java.util.Scanner;
-public class Main {
+import java.util.*;
+import java.io.*;
+
+public class Main{
     public static void main(String[]args){
-        Scanner scan=new Scanner(System.in);
-        int x=scan.nextInt();
-        
-       if(90<=x &&x<=100){
-           System.out.println("A");
-       }else if(80<=x && x<90){
-           System.out.println("B");
-       }else if(70<=x && x<80){
-           System.out.println("C");
-       }else if(60<=x && x<70){
-           System.out.println("D");
-       }else{
-           System.out.println("F");
-       }
-
-
+       Scanner sc=new Scanner(System.in);
+        int N=sc.nextInt();
+        N=N/10;
+        if(N>=9){
+            System.out.println("A");
+        }else if(N>=8){
+         System.out.println("B");   
+        }else if(N>=7){
+        System.out.println("C");
+        }else if(N>=6){
+        System.out.println("D");}
+        else{
+            System.out.println("F");
+        }
     }
 }
